@@ -2,7 +2,7 @@
 
 import { Canvas, useThree } from "@react-three/fiber";
 import { Suspense, useEffect, useState } from "react";
-import { CubeFallback, TexturedCubeFallback } from "./CubeFallback";
+import { CubeFallback } from "./CubeFallback";
 import { CubeLights } from "./CubeLights";
 import { CubeStaticFallback } from "./CubeStaticFallback";
 import { SkillsCube } from "./SkillsCube";
@@ -20,5 +20,5 @@ function ResponsiveCube({ hasModel, reducedMotion }: { hasModel: boolean; reduce
   const isDesktop = viewport.width >= 8;
   const positionX = isDesktop ? Math.min(viewport.width * 0.18, 2.35) : 0;
   const positionY = isDesktop ? 0 : -1.35;
-  return hasModel ? <SkillsCube reducedMotion={reducedMotion} positionX={positionX} positionY={positionY} /> : <TexturedCubeFallback reducedMotion={reducedMotion} positionX={positionX} positionY={positionY} />;
+  return hasModel ? <SkillsCube reducedMotion={reducedMotion} positionX={positionX} positionY={positionY} /> : <CubeFallback reducedMotion={reducedMotion} positionX={positionX} positionY={positionY} />;
 }

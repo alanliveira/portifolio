@@ -1,5 +1,7 @@
-const colors = ["bg-[#b91c3a]", "bg-[#5dba65]", "bg-[#3776ab]", "bg-[#343b4a]", "bg-[#ee8b24]", "bg-[#2496ed]"];
+import { CubeSticker } from "@/components/ui/CubeSticker";
+
+const stickerColors = ["ruby", "node", "python", "unity", "aws", "docker"] as const;
 
 export function CubeStaticFallback() {
-  return <div role="img" aria-label="Representação estática das principais tecnologias: Ruby, Node.js, Python, Unity, AWS e Docker." className="absolute right-[8%] top-1/2 grid w-44 -translate-y-1/2 grid-cols-3 gap-1 rounded-xl border border-white/15 bg-[#0b111e]/80 p-2 shadow-2xl sm:w-56">{Array.from({ length: 9 }, (_, index) => <span key={index} className={`aspect-square rounded-sm border border-white/15 ${colors[index % colors.length]}`} />)}</div>;
+  return <div role="img" aria-label="Representação estática das principais tecnologias: Ruby, Node.js, Python, Unity, AWS e Docker." className="absolute inset-0 grid place-items-center overflow-hidden"><div className="flex items-center justify-center">{stickerColors.map((color, index) => <span key={`${color}-${index}`} className="cube-loading -mx-2 block h-10 w-10 scale-[.64] sm:mx-0 sm:h-14 sm:w-14 sm:scale-100" style={{ animationDelay: `${index * 0.14}s` }}><CubeSticker color={color} /></span>)}</div></div>;
 }
