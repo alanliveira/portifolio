@@ -1,0 +1,9 @@
+{
+  "experience": [
+    { "year": "2013", "title": "Educação e tecnologia", "description": "Início da trajetória entre educação e tecnologia." },
+    { "year": "2018", "title": "Ensino de tecnologia", "description": "Experiência ensinando tecnologia e programação." },
+    { "year": "2019", "title": "Games + Educação", "description": "Exploração de desenvolvimento de jogos aplicada à educação." },
+    { "year": "2021", "title": "Desenvolvimento Web / Software", "description": "Atuação na construção e evolução de sistemas web e produtos digitais." },
+    { "year": "2025+", "title": "IA, automação e cloud", "description": "Foco em inteligência artificial, automação e infraestrutura cloud." }
+  ]
+}

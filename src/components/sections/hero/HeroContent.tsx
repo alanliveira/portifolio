@@ -1,0 +1,3 @@
+import { hero } from "@/data/hero";
+import { Button } from "@/components/ui/Button";
+export function HeroContent() { return <div className="relative z-10 py-12 lg:py-20"><p className="eyebrow">{hero.eyebrow}</p><h1 className="mt-5 max-w-3xl text-pretty text-5xl font-semibold leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl">{hero.title}</h1><p className="mt-6 max-w-2xl text-base leading-7 text-muted sm:text-lg">{hero.description}</p><div className="mt-8 flex flex-wrap gap-3"><Button href="#projetos">Ver meus projetos</Button><Button href="#pilares" variant="secondary">Conhecer meus pilares</Button></div><p className="mt-12 text-xs text-slate-400">Role para explorar <span aria-hidden="true">↓</span></p></div>; }

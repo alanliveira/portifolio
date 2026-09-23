@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <rect width="1200" height="675" fill="#1a102d"/>
+  <path d="M436 240v276m82-276v276m82-276v276m82-276v276m82-276v276M354 322h492m-492 82h492m-492 82h492" stroke="#a980ff" stroke-opacity=".12" stroke-width="2"/>
+  <rect x="162" y="224" width="180" height="310" rx="16" fill="#261744" stroke="#a980ff" stroke-opacity=".4" stroke-width="2"/>
+  <path d="M194 274h116m-116 34h82m-82 34h106m-106 34h66" stroke="#d9c9ff" stroke-opacity=".65" stroke-width="7" stroke-linecap="round"/>
+  <g transform="translate(203 405) scale(4.4)" stroke="#d9c9ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></g>
+  <g transform="translate(522 266) scale(13)" stroke="#f0e6ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m21 7.5-2.25-1.313M21 7.5v2.25m0-2.25-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3 2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75 2.25-1.313M12 21.75V19.5m0 2.25-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"/></g>
+  <circle cx="684" cy="423" r="126" stroke="#a980ff" stroke-opacity=".5" stroke-width="3" stroke-dasharray="9 12"/>
+  <path d="M1010 270v180M920 360h180" stroke="#a980ff" stroke-opacity=".42" stroke-width="3"/>
+  <g transform="translate(938 288) scale(6.1)" stroke="#f0e6ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"/></g>
+  <text x="90" y="120" fill="#f0e6ff" font-family="Arial, sans-serif" font-size="46" font-weight="700">Game Development Lab</text>
+  <text x="90" y="163" fill="#b9a3dd" font-family="Arial, sans-serif" font-size="22">código · cena 3D · interação</text>
+</svg>

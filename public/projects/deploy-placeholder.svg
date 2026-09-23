@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <rect width="1200" height="675" fill="#1b1721"/>
+  <path d="M132 486H1068" stroke="#ffad4d" stroke-opacity=".13" stroke-width="2"/>
+  <path d="M200 420C322 420 350 476 472 476c158 0 158-188 316-188 114 0 137 72 222 72" stroke="#ffad4d" stroke-opacity=".78" stroke-width="5" stroke-linecap="round" stroke-dasharray="11 15"/>
+  <g fill="#ffad4d"><circle cx="200" cy="420" r="8"/><circle cx="472" cy="476" r="8"/><circle cx="788" cy="288" r="8"/><circle cx="1010" cy="360" r="8"/></g>
+  <rect x="162" y="282" width="206" height="170" rx="18" fill="#251e2b" stroke="#ffad4d" stroke-opacity=".34" stroke-width="2"/>
+  <path d="M194 326h102m-102 32h64m-64 32h118" stroke="#d8b38f" stroke-opacity=".52" stroke-width="6" stroke-linecap="round"/>
+  <g transform="translate(246 355) scale(4.7)" stroke="#fff1de" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"/></g>
+  <circle cx="605" cy="390" r="138" fill="#ffad4d" fill-opacity=".06" stroke="#ffad4d" stroke-opacity=".42" stroke-width="2"/>
+  <g transform="translate(473 258) scale(11)" stroke="#fff1de" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m21 7.5-2.25-1.313M21 7.5v2.25m0-2.25-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3 2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75 2.25-1.313M12 21.75V19.5m0 2.25-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"/></g>
+  <g transform="translate(797 212) scale(10.2)" stroke="#fff1de" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z"/></g>
+  <path d="M898 422h112" stroke="#d8b38f" stroke-opacity=".45" stroke-width="3" stroke-linecap="round"/><path d="M928 443h82" stroke="#d8b38f" stroke-opacity=".25" stroke-width="3" stroke-linecap="round"/>
+  <text x="90" y="120" fill="#fff1de" font-family="Arial, sans-serif" font-size="46" font-weight="700">Cloud &amp; Deploy</text>
+  <text x="90" y="163" fill="#d0aa85" font-family="Arial, sans-serif" font-size="22">aplicação · container · infraestrutura</text>
+</svg>

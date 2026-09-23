@@ -1,0 +1,1 @@
+export function CubeLights() { return <><ambientLight intensity={1.2} /><directionalLight position={[4, 5, 5]} intensity={2.4} color="#dce8ff" /><directionalLight position={[-4, 1, 3]} intensity={1.1} color="#7666ff" /></>; }

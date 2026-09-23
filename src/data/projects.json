@@ -1,0 +1,92 @@
+{
+  "projects": [
+    {
+      "slug": "sistema-logistico",
+      "pillar": "web",
+      "kind": "producao",
+      "category": "Desenvolvimento Web",
+      "title": "Sistemas para operações logísticas",
+      "description": "Desenvolvimento e evolução de aplicações utilizadas em operações logísticas, envolvendo backend, frontend, dados, integrações e processamento assíncrono.",
+      "image": "/projects/logistics-placeholder.svg",
+      "technologies": ["Ruby on Rails", "React", "Angular", "Next.js", "PostgreSQL", "MongoDB", "Sidekiq", "AWS", "Docker"],
+      "href": "/projects/sistema-logistico",
+      "featured": true,
+      "caseStudy": {
+        "context": "Atuação no desenvolvimento e evolução de sistemas utilizados em operações logísticas. O trabalho envolvia aplicações que precisavam acompanhar processos reais de negócio e continuar evoluindo enquanto estavam em uso.",
+        "problem": "TODO: confirmar com Alan os problemas operacionais específicos atendidos pelas aplicações.",
+        "objective": "Evoluir aplicações que acompanham processos de operação logística, preservando manutenção, integração e estabilidade.",
+        "role": "Atuação como desenvolvedor Full Stack, trabalhando em backend, frontend, APIs, banco de dados, processamento assíncrono, manutenção e evolução de funcionalidades.",
+        "architecture": "A stack inclui Ruby on Rails no backend, interfaces com React, Angular e Next.js, PostgreSQL e MongoDB para persistência, Sidekiq para processamento assíncrono e AWS/Docker na camada de infraestrutura e deploy.",
+        "technicalDecisions": ["O sistema combinava diferentes tecnologias de acordo com as necessidades das aplicações.", "A arquitetura incluía processamento assíncrono e mais de um tipo de banco de dados.", "TODO: confirmar motivações para PostgreSQL, MongoDB, Sidekiq e o fluxo de deploy."],
+        "learnings": "A experiência trouxe contato com sistemas em produção e a necessidade de evoluir software sem perder de vista estabilidade, manutenção, integração entre diferentes partes da aplicação e impacto sobre a operação.",
+        "gallery": []
+      }
+    },
+    {
+      "slug": "plataforma-educacional-ia",
+      "pillar": "ai",
+      "kind": "conceito",
+      "category": "IA + Educação",
+      "title": "Plataforma educacional com IA",
+      "description": "Conceito de plataforma que combina LMS, inteligência artificial e registros de aula para transformar conteúdo em resumos, materiais e atividades.",
+      "image": "/projects/education-ai-placeholder.svg",
+      "technologies": ["Next.js", "Python", "LLMs", "Whisper", "n8n"],
+      "href": "/projects/plataforma-educacional-ia",
+      "featured": true,
+      "caseStudy": {
+        "context": "Projeto conceitual em desenvolvimento, nascido da experiência com educação e da percepção de que muito do conteúdo produzido durante uma aula se perde depois que ela termina. A proposta conecta planejamento pedagógico, registro da aula e inteligência artificial.",
+        "problem": "Conteúdos e registros produzidos durante aulas podem se perder após o encontro.",
+        "objective": "Explorar como software e IA podem apoiar professores e alunos sem substituir o papel pedagógico.",
+        "role": "Idealização do produto, definição do fluxo da experiência e planejamento da arquitetura técnica.",
+        "architecture": "Fluxo conceitual: professor → planejamento da aula → aula → áudio ou registro → transcrição → processamento com IA → resumo, material, atividades e revisão. Stack inicialmente considerada: Next.js, Python, modelos de linguagem, Whisper e n8n.",
+        "technicalDecisions": ["Hipótese de arquitetura: separar captura e transcrição da aula do processamento posterior com IA.", "A separação permite que cada etapa evolua independentemente.", "TODO: validar escolhas técnicas durante a evolução do produto."],
+        "learnings": "Antes de escolher ferramentas de IA, é necessário definir qual problema pedagógico está sendo resolvido, que dados são necessários e qual deve ser o papel da automação na experiência do professor e do aluno.",
+        "gallery": []
+      }
+    },
+    {
+      "slug": "game-development",
+      "pillar": "games",
+      "kind": "prototipo",
+      "category": "Game Development",
+      "title": "Game Development Lab",
+      "description": "Jogos e protótipos criados para explorar mecânicas, gameplay, sistemas interativos e experiências digitais.",
+      "image": "/projects/game-placeholder.svg",
+      "technologies": ["Unity", "C#", "Game Design"],
+      "href": "/projects/game-development",
+      "featured": true,
+      "caseStudy": {
+        "context": "Conjunto de projetos e protótipos desenvolvidos para explorar desenvolvimento de jogos, mecânicas, interação e programação, principalmente com Unity e C#.",
+        "problem": "Explorar como sistemas de gameplay e interação se comportam em experiências digitais em tempo real.",
+        "objective": "Desenvolver protótipos e sistemas de gameplay enquanto aprofunda fundamentos de interação e programação de jogos.",
+        "role": "Desenvolvimento de protótipos e implementação de sistemas de gameplay, aplicando também a experiência com ensino de programação e desenvolvimento de jogos.",
+        "architecture": "Os projetos utilizam principalmente Unity e C#, com lógica organizada em torno de controle de personagem, estados, colisões, física, interface, pontuação e progressão.",
+        "technicalDecisions": ["Preocupação geral em separar responsabilidades entre sistemas de gameplay, interface e estado do jogo.", "TODO: confirmar padrões ou arquiteturas específicos usados em cada protótipo."],
+        "learnings": "Game development contribuiu para uma forma diferente de pensar software: feedback imediato, interação, estado, experiência do usuário e comportamento de sistemas em tempo real. Essa experiência também influencia a forma de pensar interfaces e produtos web.",
+        "gallery": []
+      }
+    },
+    {
+      "slug": "automacao-deploy",
+      "pillar": "deploy",
+      "kind": "experimento",
+      "category": "Cloud & Deploy",
+      "title": "Automação e deploy de aplicações",
+      "description": "Experimentos e projetos envolvendo containers, infraestrutura, pipelines e publicação de aplicações.",
+      "image": "/projects/deploy-placeholder.svg",
+      "technologies": ["AWS", "Docker", "Linux", "CI/CD"],
+      "href": "/projects/automacao-deploy",
+      "featured": true,
+      "caseStudy": {
+        "context": "Experiência e experimentos relacionados a levar aplicações do ambiente de desenvolvimento para execução em infraestrutura, trabalhando com containers, servidores e serviços de cloud.",
+        "problem": "TODO: confirmar projetos reais e desafios de infraestrutura que serão apresentados neste case.",
+        "objective": "Preparar aplicações para execução em diferentes ambientes e tornar o ciclo de publicação mais previsível.",
+        "role": "Configuração e suporte ao processo de deploy, preparação de aplicações para execução em diferentes ambientes e trabalho com ferramentas de infraestrutura associadas ao desenvolvimento web.",
+        "architecture": "Tecnologias associadas ao pilar: AWS, Docker, Linux, Nginx e pipelines de CI/CD.",
+        "technicalDecisions": ["Separar a aplicação do ambiente de execução.", "Utilizar containers para tornar o processo mais previsível, se aplicável aos projetos apresentados.", "TODO: confirmar fluxo de deploy, observabilidade e decisões de infraestrutura."],
+        "learnings": "Deploy faz parte do ciclo de desenvolvimento. Construir a funcionalidade é apenas uma etapa; também é necessário entender configuração, ambiente, observabilidade, falhas e comportamento da aplicação fora da máquina de desenvolvimento.",
+        "gallery": []
+      }
+    }
+  ]
+}

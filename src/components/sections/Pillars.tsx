@@ -1,0 +1,7 @@
+import { Container } from "@/components/layout/Container";
+import { ArrowLink } from "@/components/ui/ArrowLink";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { TechBadge } from "@/components/ui/TechBadge";
+import { pillars } from "@/data/pillars";
+const accents = { blue: "border-blue-400/30 hover:border-blue-400/70", violet: "border-violet-400/30 hover:border-violet-400/70", cyan: "border-cyan-400/30 hover:border-cyan-400/70", orange: "border-orange-400/30 hover:border-orange-400/70" };
+export function Pillars() { return <section id="pilares" className="section"><Container><SectionHeading eyebrow="Pilares" title="Quatro áreas. Um mesmo propósito." description="Áreas que se conectam para transformar problemas reais em soluções digitais." sticker="ruby" /><div className="mt-12 grid gap-4 md:grid-cols-2">{pillars.map((pillar) => <article key={pillar.id} className={`card border p-6 transition-colors ${accents[pillar.accent]}`}><p className="text-xs font-bold text-slate-400">PILAR {pillar.number}</p><h3 className="mt-7 text-2xl font-semibold text-white">{pillar.title}</h3><p className="mt-4 leading-7 text-muted">{pillar.description}</p><div className="mt-6 flex flex-wrap gap-2">{pillar.technologies.map((technology) => <TechBadge key={technology}>{technology}</TechBadge>)}</div><div className="mt-8"><ArrowLink href="#projetos">Ver projetos</ArrowLink></div></article>)}</div></Container></section>; }

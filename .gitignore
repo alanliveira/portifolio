@@ -1,0 +1,15 @@
+# dependencies
+/node_modules
+
+# Next.js
+/.next
+/out
+*.tsbuildinfo
+
+# Environment files. Only the documented example may be committed.
+.env
+.env.*
+!.env.example
+
+# logs
+npm-debug.log*
