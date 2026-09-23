@@ -39,7 +39,7 @@ function axisVector(axis: Axis) {
   return axis === "x" ? new THREE.Vector3(1, 0, 0) : axis === "y" ? new THREE.Vector3(0, 1, 0) : new THREE.Vector3(0, 0, 1);
 }
 
-export function CubeFallback({ reducedMotion = false, positionX = 0, positionY = 0 }: { reducedMotion?: boolean; positionX?: number; positionY?: number }) {
+export function CubeFallback({ reducedMotion = false, positionX = 0, positionY = 0, scale = 1.1 }: { reducedMotion?: boolean; positionX?: number; positionY?: number; scale?: number }) {
   const root = useRef<THREE.Group>(null);
   const cubies = useRef(new Map<string, THREE.Group>());
   const positions = useRef(new Map<string, THREE.Vector3>(cubePositions.map((position, index) => [String(index), new THREE.Vector3(...position)])));
@@ -97,5 +97,5 @@ export function CubeFallback({ reducedMotion = false, positionX = 0, positionY =
     nextTurnAt.current = elapsed + 1.6;
   });
 
-  return <group ref={root} position={[positionX, positionY, 0]} rotation={[-0.22, -0.42, 0]} scale={1.1}>{cubePositions.map((position, index) => <Cubie key={index} id={String(index)} position={position} register={(id, node) => { if (node) cubies.current.set(id, node); else cubies.current.delete(id); }} />)}</group>;
+  return <group ref={root} position={[positionX, positionY, 0]} rotation={[-0.22, -0.42, 0]} scale={scale}>{cubePositions.map((position, index) => <Cubie key={index} id={String(index)} position={position} register={(id, node) => { if (node) cubies.current.set(id, node); else cubies.current.delete(id); }} />)}</group>;
 }

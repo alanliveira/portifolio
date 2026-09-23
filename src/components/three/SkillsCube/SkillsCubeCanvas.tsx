@@ -25,5 +25,5 @@ function ResponsiveCube({ reducedMotion }: { reducedMotion: boolean }) {
   const isDesktop = viewport.width >= 8;
   const positionX = isDesktop ? Math.min(viewport.width * 0.18, 2.35) : 0;
   const positionY = isDesktop ? 0 : -1.35;
-  return <CubeFallback reducedMotion={reducedMotion} positionX={positionX} positionY={positionY} />;
+  return <CubeFallback reducedMotion={reducedMotion} positionX={positionX} positionY={positionY} scale={isDesktop ? 1.1 : 0.78} />;
 }
