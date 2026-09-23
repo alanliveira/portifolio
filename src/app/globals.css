@@ -28,4 +28,11 @@ button { touch-action: manipulation; }
 @keyframes cube-loading { 0%, 100% { opacity: .35; transform: translateY(5px); } 50% { opacity: 1; transform: translateY(-7px); } }
 .eyebrow { color: #a99fff; font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
 .card { border: 1px solid color-mix(in srgb, var(--border) 90%, transparent); background: linear-gradient(140deg, rgba(18,28,46,.88), rgba(10,16,28,.9)); border-radius: 1.25rem; }
+.seal-rain { animation: seal-rain-out .7s ease 4.3s forwards; inset: 0; overflow: hidden; pointer-events: none; position: fixed; z-index: 90; }
+.seal-drop { animation: seal-fall var(--seal-duration) linear var(--seal-delay) both; filter: drop-shadow(0 5px 4px rgba(7,11,20,.25)); left: var(--seal-left); position: absolute; top: 0; transform: rotate(var(--seal-rotation)); width: var(--seal-size); }
+.seal-drop svg { display: block; height: auto; width: 100%; }
+@keyframes seal-fall { 0% { opacity: 0; transform: translate3d(0,-15vh,0) rotate(var(--seal-rotation)); } 8% { opacity: 1; } 55% { opacity: 1; transform: translate3d(-1.25rem,55vh,0) rotate(calc(var(--seal-rotation) - 16deg)); } 100% { opacity: 1; transform: translate3d(1.5rem,115vh,0) rotate(calc(var(--seal-rotation) + 10deg)); } }
+@keyframes seal-rain-out { to { opacity: 0; } }
+.gesture-trail-step { animation: gesture-trail-in .2s ease-out both; }
+@keyframes gesture-trail-in { from { opacity: 0; transform: scale(.65) translateY(8px); } to { opacity: 1; transform: scale(1) translateY(0); } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
