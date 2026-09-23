@@ -11,5 +11,10 @@
 .env.*
 !.env.example
 
+# Local AI agent skills
+.agents/
+.claude/
+skills-lock.json
+
 # logs
 npm-debug.log*

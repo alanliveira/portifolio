@@ -2,6 +2,10 @@ import "server-only";
 
 type TurnstileResult = { success: boolean; hostname?: string; action?: string };
 
+function expectedHostnames() {
+  return new Set((process.env.TURNSTILE_HOSTNAMES ?? "").split(",").map((hostname) => hostname.trim()).filter(Boolean));
+}
+
 export async function verifyTurnstile(token: string) {
   const secret = process.env.TURNSTILE_SECRET_KEY;
   if (!secret) return false;
@@ -17,8 +21,7 @@ export async function verifyTurnstile(token: string) {
   const result = await response.json() as TurnstileResult;
   if (!result.success) return false;
   if (process.env.NODE_ENV !== "production") return true;
-  if (result.action && result.action !== "contact") return false;
 
-  const expectedHostname = process.env.SITE_URL ? new URL(process.env.SITE_URL).hostname : undefined;
-  return !(expectedHostname && result.hostname && result.hostname !== expectedHostname);
+  const hostnames = expectedHostnames();
+  return result.action === "contact" && typeof result.hostname === "string" && hostnames.has(result.hostname);
 }
