@@ -107,11 +107,11 @@ TURNSTILE_SECRET_KEY=1x0000000000000000000000000000000AA
 Para o widget de produção já criado, a site key pública está em `.env.example`. Cadastre a secret correspondente apenas no painel da Vercel como `TURNSTILE_SECRET_KEY`; ela nunca deve ser adicionada ao Git ou compartilhada em chat. Configure também:
 
 ```env
-TURNSTILE_HOSTNAMES=portifolio-indol-six-41.vercel.app
-SITE_URL=https://portifolio-indol-six-41.vercel.app
+TURNSTILE_HOSTNAMES=alanliveira.dev
+SITE_URL=https://alanliveira.dev
 ```
 
-No painel Cloudflare Turnstile, o widget precisa permitir `portifolio-indol-six-41.vercel.app`, `localhost` e `127.0.0.1`. Os dois últimos são para desenvolvimento local e não entram em `TURNSTILE_HOSTNAMES` de produção.
+No painel Cloudflare Turnstile, o widget precisa permitir `alanliveira.dev`, `localhost` e `127.0.0.1`. Os dois últimos são para desenvolvimento local e não entram em `TURNSTILE_HOSTNAMES` de produção.
 
 Para testar o Resend sem domínio próprio, use o sandbox. Ele entrega apenas para o email usado na conta Resend:
 
