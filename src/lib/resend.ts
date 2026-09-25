@@ -19,5 +19,10 @@ export async function sendContactEmail(contact: ContactInput) {
     ...email,
   }, { idempotencyKey: `portfolio-contact/${contact.submissionId}` });
 
-  return !error;
+  if (error) {
+    console.error("Resend contact email failed", { message: error.message, name: error.name });
+    return false;
+  }
+
+  return true;
 }

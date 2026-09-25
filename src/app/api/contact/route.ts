@@ -39,7 +39,8 @@ export async function POST(request: Request) {
     const sent = await sendContactEmail(parsed.data);
     if (!sent) return error("Não foi possível enviar sua mensagem agora. Tente novamente mais tarde.", 502);
     return NextResponse.json({ ok: true }, { headers });
-  } catch {
+  } catch (cause) {
+    console.error("Contact form submission failed", { message: cause instanceof Error ? cause.message : String(cause) });
     return error("Não foi possível enviar sua mensagem agora. Tente novamente mais tarde.", 500);
   }
 }
