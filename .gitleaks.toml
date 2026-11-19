@@ -1,0 +1,11 @@
+# Configuração do Gitleaks usada pelo workflow de segurança.
+# Mantém todas as regras padrão e libera apenas valores públicos por design.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Valores públicos conhecidos"
+regexes = [
+  # Site key do Cloudflare Turnstile: é exposta no navegador para renderizar o widget.
+  '''0x4AAAAAAFBUbQxW_5uO-8oU''',
+]
