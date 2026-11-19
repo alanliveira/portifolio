@@ -1,4 +1,4 @@
-type CubeStickerColor = "ruby" | "node" | "python" | "unity" | "aws" | "docker";
+export type CubeStickerColor = "ruby" | "node" | "python" | "unity" | "aws" | "docker" | "yellow" | "white";
 
 const colors: Record<CubeStickerColor, { front: string; top: string; side: string }> = {
   ruby: { front: "#b91c3a", top: "#e95b70", side: "#7f1027" },
@@ -7,6 +7,8 @@ const colors: Record<CubeStickerColor, { front: string; top: string; side: strin
   unity: { front: "#343b4a", top: "#667085", side: "#202631" },
   aws: { front: "#ee8b24", top: "#ffb65c", side: "#b95a0c" },
   docker: { front: "#2496ed", top: "#67b9f3", side: "#166ba9" },
+  yellow: { front: "#f2c230", top: "#ffdf6e", side: "#b88a0e" },
+  white: { front: "#e6e9f0", top: "#ffffff", side: "#a9b0c0" },
 };
 
 export function CubeSticker({ color }: { color: CubeStickerColor }) {

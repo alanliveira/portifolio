@@ -1,4 +1,4 @@
-export type ProjectKind = "producao" | "conceito" | "prototipo" | "experimento";
+export type ProjectKind = "cliente" | "producao" | "publicado" | "academico";
 export type PillarId = "web" | "games" | "ai" | "deploy";
 
 export interface Project {
@@ -12,14 +12,15 @@ export interface Project {
   technologies: string[];
   href: string;
   featured: boolean;
+  liveUrl?: string;
+  liveLabel?: string;
+  repoUrl?: string;
   caseStudy: {
-    context: string;
-    problem: string;
-    objective: string;
+    challenge: string;
+    solution: string;
     role: string;
-    architecture: string;
-    technicalDecisions: string[];
-    learnings: string;
+    highlights: string[];
+    result: string;
     gallery: string[];
   };
 }

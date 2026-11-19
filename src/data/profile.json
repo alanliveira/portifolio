@@ -5,6 +5,9 @@
   "email": "alanliveira@outlook.com",
   "github": "https://github.com/alanliveira",
   "linkedin": "https://linkedin.com/in/alanliveira",
+  "whatsapp": "",
+  "whatsappMessage": "Olá, Alan! Vi seu portfólio e quero conversar sobre um projeto.",
+  "calendarUrl": "",
   "repos": [
     { "Name": "alanliveira/alanliveira", "url": "https://github.com/alanliveira/alanliveira", "access": "public", "languages": [] },
     { "Name": "alanliveira/course-react-nextjs-nestjs-typescript", "url": "https://github.com/alanliveira/course-react-nextjs-nestjs-typescript", "access": "public", "languages": ["TypeScript", "CSS", "JavaScript", "HTML"] },

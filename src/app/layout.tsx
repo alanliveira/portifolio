@@ -9,7 +9,11 @@ const geist = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
 
 const GTM_ID = "GTM-WNJDSGRP";
 
-export const metadata: Metadata = { metadataBase: new URL(siteConfig.siteUrl), title: { default: "Alan Oliveira — Full Stack Developer", template: "%s | Alan Oliveira" }, description: "Portfólio de Alan Oliveira, desenvolvedor Full Stack com experiência em desenvolvimento web, games, inteligência artificial, automação e deploy de aplicações.", alternates: { canonical: "/" }, icons: { icon: "/icon.svg" }, openGraph: { type: "website", locale: "pt_BR", url: siteConfig.siteUrl, siteName: "Alan Oliveira", title: "Alan Oliveira — Full Stack Developer", description: "Desenvolvimento web, games, inteligência artificial e deploy de aplicações.", images: [{ url: "/images/og-placeholder.svg", width: 1200, height: 630, alt: "Alan Oliveira — Full Stack Developer" }] }, twitter: { card: "summary_large_image", title: "Alan Oliveira — Full Stack Developer", description: "Desenvolvimento web, games, inteligência artificial e deploy de aplicações.", images: ["/images/og-placeholder.svg"] }, robots: { index: true, follow: true } };
+const title = "Alan Oliveira — Desenvolvedor Full Stack freelancer";
+const description = "Desenvolvimento de sites, sistemas web, landing pages e automações com IA para empresas e empreendedores. Do layout ao deploy, com proposta clara de escopo, prazo e valor.";
+const shortDescription = "Sites, sistemas web, automações e IA — do layout ao deploy.";
+
+export const metadata: Metadata = { metadataBase: new URL(siteConfig.siteUrl), title: { default: title, template: "%s | Alan Oliveira" }, description, keywords: ["desenvolvedor freelancer", "desenvolvedor full stack", "criação de sites", "landing page", "sistema web sob medida", "automação de processos", "n8n", "MVP"], alternates: { canonical: "/" }, icons: { icon: "/icon.svg" }, openGraph: { type: "website", locale: "pt_BR", url: siteConfig.siteUrl, siteName: "Alan Oliveira", title, description: shortDescription, images: [{ url: "/images/og.png", width: 1200, height: 630, alt: title }] }, twitter: { card: "summary_large_image", title, description: shortDescription, images: ["/images/og.png"] }, robots: { index: true, follow: true } };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
