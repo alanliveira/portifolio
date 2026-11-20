@@ -68,6 +68,20 @@ npm run build      # Build de produção
 npm start          # Servidor do build de produção
 ```
 
+## CI e segurança
+
+Todo pull request e push na `main` passam pelas GitHub Actions em `.github/workflows/`:
+
+- **CI** (`ci.yml`): `npm ci`, lint, typecheck, testes, build e checagem de textos `TODO` nas páginas geradas; auditoria com `npm audit --audit-level=high` e verificação de assinaturas dos pacotes.
+- **Segurança** (`security.yml`): análise estática com CodeQL (`security-extended`), varredura de segredos com Gitleaks (configurado em `.gitleaks.toml`) e revisão de dependências novas nos PRs. Também roda semanalmente.
+- **Dependabot** (`.github/dependabot.yml`): PRs semanais de atualização de dependências npm e mensais das actions.
+
+Para reproduzir localmente o essencial:
+
+```bash
+npm run lint && npm run typecheck && npm test && npm run build && npm audit --audit-level=high
+```
+
 ## Variáveis de ambiente
 
 Use [`.env.example`](.env.example) como referência. Todas as variáveis abaixo são configuradas em `.env.local` localmente e em **Vercel → Settings → Environment Variables** no deploy.

@@ -1,6 +1,7 @@
 export const hero = {
-  eyebrow: "FULL STACK DEVELOPER · SOFTWARE · IA · GAMES",
-  title: "Transformo problemas em produtos digitais.",
+  eyebrow: "DESENVOLVEDOR FULL STACK · FREELANCER",
+  title: "Tiro sua ideia do papel e coloco seu sistema no ar.",
   description:
-    "Sou Alan Oliveira, desenvolvedor Full Stack com experiência na construção e evolução de sistemas web, APIs e produtos digitais. Trabalho entre desenvolvimento web, games, inteligência artificial e infraestrutura, transformando ideias em soluções que podem chegar à produção.",
+    "Sou Alan Oliveira. Crio sites, sistemas web e automações para empresas e empreendedores que precisam de uma solução que funcione de verdade — do primeiro esboço ao deploy, com comunicação clara em cada etapa.",
+  trust: ["Sistemas em produção", "Do layout ao deploy", "Resposta em até 24h"],
 };
