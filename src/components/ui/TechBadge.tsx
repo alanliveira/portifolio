@@ -22,6 +22,14 @@ import TailwindcssOriginalIcon from "react-devicons/tailwindcss/original";
 import UnityOriginalIcon from "react-devicons/unity/original";
 import UnrealengineOriginalIcon from "react-devicons/unrealengine/original";
 import VuejsOriginalIcon from "react-devicons/vuejs/original";
+import Css3OriginalIcon from "react-devicons/css3/original";
+import FlutterOriginalIcon from "react-devicons/flutter/original";
+import GitOriginalIcon from "react-devicons/git/original";
+import GithubactionsOriginalIcon from "react-devicons/githubactions/original";
+import Html5OriginalIcon from "react-devicons/html5/original";
+import JavascriptOriginalIcon from "react-devicons/javascript/original";
+import RabbitmqOriginalIcon from "react-devicons/rabbitmq/original";
+import TypescriptOriginalIcon from "react-devicons/typescript/original";
 
 type Devicon = ComponentType<SVGProps<SVGElement> & { size?: string | number }>;
 
@@ -49,11 +57,21 @@ const icons: Record<string, Devicon> = {
   "C#": CsharpOriginalIcon,
   "Godot": GodotOriginalIcon,
   "Unreal": UnrealengineOriginalIcon,
+  "TypeScript": TypescriptOriginalIcon,
+  "JavaScript": JavascriptOriginalIcon,
+  "HTML5": Html5OriginalIcon,
+  "CSS3": Css3OriginalIcon,
+  "Git": GitOriginalIcon,
+  "GitHub Actions": GithubactionsOriginalIcon,
+  "RabbitMQ": RabbitmqOriginalIcon,
+  "Flutter": FlutterOriginalIcon,
 };
 
-export function TechIcon({ technology, className = "" }: { technology: string; className?: string }) {
+export const hasTechIcon = (technology: string) => technology in icons;
+
+export function TechIcon({ technology, className = "", size }: { technology: string; className?: string; size?: string | number }) {
   const Icon = icons[technology];
-  return Icon ? <Icon aria-hidden="true" className={className} /> : null;
+  return Icon ? <Icon aria-hidden="true" className={className} size={size} /> : null;
 }
 
 export function TechBadge({ children }: { children: string }) {
